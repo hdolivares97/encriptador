@@ -20,6 +20,11 @@
     <main>
         <section class="content-input">
             <textarea id="caja-input" placeholder="Ingrese el texto aqui"></textarea>        
+            <textarea id="caja-auxiliar"></textarea>   
+            <div style="width:100%;">
+                <button id="btn-aux-copy" onclick="copyText();">Copiar</button> 
+            </div>
+                
             <div class="content-buttons">
                 <small id="instruccion"><i class="fas fa-info-circle"></i>&nbsp;Solo letras minúsculas y sin acentos</small>
                 <button type="button" onclick="encripDesencript('encrypt');" class="button encriptar">Encriptar</button>

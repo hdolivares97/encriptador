@@ -63,7 +63,29 @@ body{
     resize: none;
 }
 
-#caja-input:focus{
+#caja-auxiliar{
+    display: none;
+    font-family: 'Raleway', sans-serif !important;
+    text-decoration: none;
+    text-decoration-line: none;
+    width: 100%;
+    top: 168px;
+    left: 240px;
+    background: #fff;
+    color: #0A3871;    
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    float: left;
+    animation-duration: 0ms;
+    resize: none;
+    padding: 10px;
+}
+
+#caja-input, #caja-auxiliar:focus{
     outline: none;
 }
 
@@ -134,7 +156,6 @@ body{
 }
 
 #instruccion{
-    width: 100%; 
     float: left; 
     text-align: left; 
     position:absolute; 
@@ -173,4 +194,88 @@ body{
 
 #text-output:focus{
     outline: none;
+}
+
+@media(max-width: 1150px){
+	.content-input {
+        width: 60%;
+        left: 50px;
+    }
+    
+    #caja-input {
+        width: 100%;        
+    }
+
+    .content-output {
+        width: 28%;
+    }
+
+    .button {
+        width: 200px;
+    }
+}
+
+@media(max-width: 900px){
+	.content-input {
+        width: 50%;
+        left: 30px;
+    }
+
+    .content-output {
+        width: 28%;
+    }
+
+    .button {
+        width: 150px;
+    }
+}
+
+@media(max-width: 650px){
+    .content-input {
+        position: relative;
+        top: 30px;
+        left: 0;
+        width: 90%;
+        margin-top: 90px;
+    }
+
+    #caja-input{
+        padding: 10px;
+        border: 1px solid #95b4da;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content-output {
+        position: static;
+        width: 90%;
+        float: none;
+        display: none;
+    }
+
+    .content-btn-copiar {
+        position: static;
+    }        
+
+    #caja-auxiliar{
+        display: block;
+    }
+
+    #btn-aux-copy{
+        display: block !important;
+    }        
+}
+
+#btn-aux-copy{
+    display: none;
+    float:right; 
+    font-size: 12px;
+    top:-10px; 
+    margin-top: -12px; 
+    background-color: rgb(170, 169, 169);
+    color: #fff; 
+    border-radius: 5px;
+    border: solid rgb(170, 169, 169);
+    cursor: pointer;
 }
